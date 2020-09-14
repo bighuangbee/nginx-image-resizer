@@ -7,7 +7,7 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - minio-data:/data
+      - /server/data/minio:/data
     logging:
       driver: "json-file"
       options:
@@ -22,7 +22,7 @@ services:
     image: nginx-image-resizer
     container_name: image-resizer
     ports:
-      - 8002:80
+      - 9001:80
     volumes:
       - cache-data:/data
     logging:
@@ -35,5 +35,4 @@ services:
       NGINX_HOST: localhost
 
 volumes:
-  minio-data:
   cache-data:
