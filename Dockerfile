@@ -1,6 +1,4 @@
-FROM nginx:1.15-alpine
-
-LABEL maintainer="Bo-Yi Wu <appleboy.tw@gmail.com>"
+FROM nginx:1.16-alpine
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY module.conf /etc/nginx/module.conf

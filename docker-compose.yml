@@ -19,7 +19,7 @@ services:
     command: server /data
 
   image-resizer:
-    image: appleboy/nginx-image-resizer
+    image: nginx-image-resizer
     container_name: image-resizer
     ports:
       - 8002:80

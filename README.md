@@ -7,7 +7,7 @@ Docker Container of real time image resizing and caching
 ## Build Image
 
 ```
-$ docker build -t appleboy/nginx-image-resizer .
+$ docker build -t nginx-image-resizer .
 ```
 
 ## RUN Image
@@ -17,7 +17,7 @@ $ docker run --restart always \
   -p 8002:80 \
   -e NGINX_HOST=localhost \
   -e IMAGE_HOST="http://localhost:9000" \
-  appleboy/nginx-image-resizer
+  nginx-image-resizer
 ```
 
 ## Paramemter

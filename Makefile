@@ -1,5 +1,5 @@
 build:
-	docker build -t appleboy/nginx-image-resizer .
+	docker build -t nginx-image-resizer .
 
 up:
 	docker-compose $@
